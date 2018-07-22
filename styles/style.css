@@ -1,0 +1,69 @@
+
+body
+{
+
+    background-image: url("https://images.unsplash.com/photo-1437422061949-f6efbde0a471?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e864d8eb30d32ccccb910a4b49de0d92&auto=format&fit=crop&w=1500&q=80");
+  
+}
+
+
+h1
+{
+    font-size: 55px;
+    color: white;
+    text-align: center;
+    margin-top: 90px;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 1px 2px 3px #666;
+    -webkit-animation: move 15s;
+    -moz-animation:    move 15s;
+    -o-animation:      move 15s;
+    animation:        move 15s;
+
+}
+
+p
+{
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 1px 2px 3px #666;
+    -webkit-animation: move 20s;
+    -moz-animation:    move 20s;
+    -o-animation:      move 20s;
+    animation:        move 20s;
+}
+
+nav
+{
+    margin-top: 140px;
+    text-align: center;
+    padding: 30px;
+}
+
+h4{
+    -webkit-animation: move 15s;
+    -moz-animation:    move 15s;
+    -o-animation:      move 15s;
+     animation:        move 15s;
+}
+
+
+@-webkit-keyframes move {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes move {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes move {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes move {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
