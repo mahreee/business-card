@@ -15,10 +15,10 @@ h1 {
   margin-top: 90px;
   font-family: "Raleway", sans-serif;
   text-shadow: 1px 2px 3px #666;
-  -webkit-animation: move 15s;
-  -moz-animation: move 15s;
-  -o-animation: move 15s;
-  animation: move 15s;
+  -webkit-animation: move 5s;
+  -moz-animation: move 5s;
+  -o-animation: move 5s;
+  animation: move 5s;
 }
 
 p {
@@ -28,10 +28,10 @@ p {
   font-size: 20px;
   font-family: "Raleway", sans-serif;
   text-shadow: 1px 2px 3px #666;
-  -webkit-animation: move 20s;
-  -moz-animation: move 20s;
-  -o-animation: move 20s;
-  animation: move 20s;
+  -webkit-animation: move 10s;
+  -moz-animation: move 10s;
+  -o-animation: move 10s;
+  animation: move 10s;
 }
 
 nav {
@@ -41,10 +41,10 @@ nav {
 }
 
 h4 {
-  -webkit-animation: move 15s;
-  -moz-animation: move 15s;
-  -o-animation: move 15s;
-  animation: move 15s;
+  -webkit-animation: move 5s;
+  -moz-animation: move 5s;
+  -o-animation: move 5s;
+  animation: move 5s;
 }
 
 @-webkit-keyframes move {
