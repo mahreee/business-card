@@ -1,81 +1,96 @@
 body {
-  background-image: url("../img/background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -100;
-  display: block;
-  height: 100%;
-  width: auto;
+overflow: hidden;
+margin: 0%;
+padding: 0%;
+color: #ffffff;
+font-family: "Raleway", sans-serif;
+font-size: 16px;
+font-weight: 300;
+line-height: 1.75;
+ 
 }
 
 h1 {
   font-size: 55px;
-  color: white;
-  text-align: center;
-  margin-top: 90px;
-  font-family: "Raleway", sans-serif;
-  text-shadow: 1px 2px 3px #666;
-  -webkit-animation: move 5s;
-  -moz-animation: move 5s;
-  -o-animation: move 5s;
-  animation: move 5s;
+  font-weight: 900;
+  margin-top: 0;
+
 }
 
 p {
+ font-size:25px;
+ margin: 0 0 24px 0;
+ opacity: 0.75;
+}
+
+.introduction
+{
+  width: 100vw;
+height: 100vh;
+background-color: #348cb2;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+
+.bg
+{
+  animation: bg 60s linear infinite;
+  background: url('../img/background.jpg') repeat-x bottom left;
+  height: 100%;
+  position: absolute;
+  background-size: 2550px;
+  width:6400px;
+
+  
+}
+
+.box
+{
+  animation: show 1s 1s forwards;
+  opacity: 0;
   text-align: center;
-  margin-top: 50px;
-  color: white;
-  font-size: 20px;
-  font-family: "Raleway", sans-serif;
-  text-shadow: 1px 2px 3px #666;
-  -webkit-animation: move 10s;
-  -moz-animation: move 10s;
-  -o-animation: move 10s;
-  animation: move 10s;
+  width: 100%;
+  margin-top:-300px;
 }
 
-nav {
-  margin-top: 140px;
-  text-align: center;
-  padding: 30px;
+.nav {
+  display: flex;
+  justify-content: center;
 }
 
-h4 {
-  -webkit-animation: move 5s;
-  -moz-animation: move 5s;
-  -o-animation: move 5s;
-  animation: move 5s;
+.nav-item{
+  animation: show 0.5s ease-in-out forwards;
+  transition: all 0.3s ease-in-out;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
-@-webkit-keyframes move {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.nav-item:hover
+{
+  cursor: pointer;
 }
-@-moz-keyframes move {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+
+@keyframes show{
+0% {
+transform: translate(0, 16px);
+opacity: 0;
 }
-@-o-keyframes move {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+100% {
+  transform: translate(0);
+  opacity: 1;
 }
-@keyframes move {
+}
+
+@keyframes bg{
   0% {
-    opacity: 0;
+    transform: translate(0);
   }
   100% {
-    opacity: 1;
+    transform: translate(-2250px);
   }
 }
