@@ -1,58 +1,51 @@
 body {
-overflow: hidden;
-margin: 0%;
-padding: 0%;
-color: #ffffff;
-font-family: "Raleway", sans-serif;
-font-size: 16px;
-font-weight: 300;
-line-height: 1.75;
- 
+  overflow: hidden;
+  margin: 0%;
+  padding: 0%;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
 }
 
 h1 {
   font-size: 55px;
   font-weight: 900;
   margin-top: 0;
-
 }
 
 p {
- font-size:25px;
- margin: 0 0 24px 0;
- opacity: 0.75;
+  font-size: 25px;
+  margin: 0 0 24px 0;
+  opacity: 0.75;
 }
 
-.introduction
-{
+.introduction {
   width: 100vw;
-height: 100vh;
-background-color: #348cb2;
-display: flex;
-align-items: center;
-justify-content: center;
-position: relative;
+  height: 100vh;
+  background-color: #4d6cad;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-.bg
-{
+.bg {
   animation: bg 60s linear infinite;
-  background: url('../img/background.jpg') repeat-x bottom left;
+  background: url("../img/background.jpg") repeat-x bottom left;
   height: 100%;
   position: absolute;
-  background-size: 2700px;
-  width:6400px;
-
-  
+  background-size: contain;
+  width: 6400px;
 }
 
-.box
-{
+.box {
   animation: show 1s 1s forwards;
   opacity: 0;
   text-align: center;
   width: 100%;
-  margin-top:-300px;
+  margin-top: -100px;
 }
 
 .nav {
@@ -60,37 +53,35 @@ position: relative;
   justify-content: center;
 }
 
-.nav-item{
+.nav-item {
   animation: show 0.5s ease-in-out forwards;
   transition: all 0.3s ease-in-out;
   margin: 0 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
-.nav-item:hover
-{
+.nav-item:hover {
   cursor: pointer;
 }
 
-@keyframes show{
-0% {
-transform: translate(0, 16px);
-opacity: 0;
-}
-100% {
-  transform: translate(0);
-  opacity: 1;
-}
+@keyframes show {
+  0% {
+    transform: translate(0, 16px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
 }
 
-@keyframes bg{
+@keyframes bg {
   0% {
     transform: translate(0);
   }
   100% {
-    transform: translate(-2250px);
+    transform: translate(-2400px);
   }
 }
